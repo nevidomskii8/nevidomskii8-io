@@ -35,20 +35,23 @@ export const EditPost = () => {
         if (!postKey) return;
         dispatch(singlePostFetchStart(+postKey));
     }, [postKey, dispatch]);
-
+    if (!postKey) {
+        return null;
+    }
     const handleEditPost = useCallback(
         (values: EditPostPayload) => {
             setSubmitting(true);
             dispatch(
                 postEditStart(
-                    +postKey!,
+                    +postKey,
                     values,
                     () => {
                         setSubmitting(false);
                         notification.success({
                             message: 'Post edited successfully',
                             description:
-                                'Post has been edited successfully but it is not saved to the backend as JSONPlaceHolder is just a dummy api. Check the network tab to inspect the request.',
+                                'Post has been edited successfully but it is not saved to the backend as ' +
+                                'JSONPlaceHolder is just a dummy api. Check the network tab to inspect the request.',
                         });
                         navigate('/');
                     },

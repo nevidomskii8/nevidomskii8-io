@@ -37,7 +37,7 @@ export const PostActions: FC<Props> = ({post}) => {
                 return new Promise((resolve, reject) => {
                     dispatch(
                         postDeleteStart(
-                            post.key!,
+                            post.key,
                             () => {
                                 resolve(0);
                                 notification.success({
