@@ -78,7 +78,7 @@ const handleDeletePost = (
     state: PostsState,
     action: PostDeleteSuccessAction,
 ) => {
-    const updatedPosts = [...state.posts!];
+    const updatedPosts = [...(state.posts ?? [])];
     const indexToDelete = updatedPosts.findIndex(
         (p) => p.key === action.payload.key,
     );

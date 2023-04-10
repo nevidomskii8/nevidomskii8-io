@@ -3,6 +3,7 @@ import './style.scss';
 import * as React from 'react';
 import {memo, useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
+import {Link} from 'react-router-dom';
 
 import {PostsSearch} from './../../components/PostsSearch';
 import {PostsTable} from './../../components/PostsTable';
@@ -24,6 +25,7 @@ export const Posts = () => {
 
     return (
         <div className="posts-container">
+            <Link to={'/'}> Back To Home</Link>
             <MemoizedPostsSearch />
             <PostsTable posts={posts} />
         </div>

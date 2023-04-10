@@ -1,10 +1,9 @@
+import HomePage from '@features/homePage/HomePage';
 import React from 'react';
-
-import HomePage from '@src/features/homePage/HomePage';
 
 export const router = [
     {
-        path: '/',
+        path: '/home',
         element: <HomePage />,
     },
 ];

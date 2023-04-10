@@ -24,7 +24,7 @@ export function* handleFetchPosts() {
     try {
         const posts: Post[] = yield call(fetchPosts);
         yield put(postsFetchSuccess(posts));
-    } catch (err: any) {
+    } catch (err) {
         yield put(postsFetchError(err.message));
     }
 }
@@ -33,7 +33,7 @@ export function* handleFetchSinglePost(action: SinglePostFetchStartAction) {
     try {
         const post: Post = yield call(fetchSinglePost, action.payload.key);
         yield put(singlePostFetchSuccess(post));
-    } catch (err: any) {
+    } catch (err) {
         yield put(singlePostFetchError(err.message));
     }
 }
@@ -43,7 +43,7 @@ export function* handleEditPost(action: PostEditStartAction) {
     try {
         yield call(editPost, key, data);
         successCallback();
-    } catch (err: any) {
+    } catch (err) {
         errorCallback();
     }
 }
@@ -54,7 +54,7 @@ export function* handleDeletePost(action: PostDeleteStartAction) {
         yield call(deletePost, key);
         yield put(deletePostSuccess(key));
         successCallback();
-    } catch (err: any) {
+    } catch (err) {
         errorCallback();
     }
 }
