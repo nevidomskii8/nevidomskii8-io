@@ -1,0 +1,18 @@
+{
+  "homePage": {
+    "welcome": "some welcome text"
+  },
+  "portfolio`": {
+    "title": "Some very interesting headline"
+  },
+  "contact": {
+    "title": "relevant contacts"
+  },
+  "navigation": {
+    "links": {
+      "homePage": "home",
+      "contacts": "contacts",
+      "portfolio": "portfolio"
+    }
+  }
+}

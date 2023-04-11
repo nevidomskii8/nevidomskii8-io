@@ -1,17 +1,23 @@
 import './header.scss';
+import '../../config/i18n';
 
+import {Button, ButtonGroup} from '@mui/material';
 import * as React from 'react';
 import {FC} from 'react';
 
 interface HeaderProp {
     active: boolean;
     setActive: (active: boolean) => void;
+    onChangeLanguage: (lg: string) => void;
 }
-const Header: FC<HeaderProp> = ({setActive, active}) => {
+const Header: FC<HeaderProp> = ({setActive, active, onChangeLanguage}) => {
     return (
         <div className="header">
             <div className="header__content">
-                <div className="logo">Portfolio</div>
+                <ButtonGroup variant="text" color="inherit">
+                    <Button onClick={() => onChangeLanguage('en')}>🇺🇸</Button>
+                    <Button onClick={() => onChangeLanguage('ua')}>🇺🇦</Button>
+                </ButtonGroup>
                 <div
                     className={`menu-toggle ${active ? 'active' : ''}`}
                     onClick={() => setActive(!active)}
