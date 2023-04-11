@@ -1,4 +1,4 @@
-import axios, {AxiosHeaders} from 'axios';
+import axios from 'axios';
 
 export default function makeApi(baseURL: string) {
     const api = axios.create({
@@ -20,7 +20,7 @@ export default function makeApi(baseURL: string) {
 
             return config;
         },
-        (error: any) => Promise.reject(error),
+        (error) => Promise.reject(error),
     );
 
     api.interceptors.response.use(

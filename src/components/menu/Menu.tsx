@@ -1,6 +1,7 @@
 import './menu.scss';
 
 import React, {FC, useEffect} from 'react';
+import {useTranslation} from 'react-i18next';
 import {Link, useLocation} from 'react-router-dom';
 
 interface MenuProp {
@@ -10,6 +11,7 @@ interface MenuProp {
 
 const Menu: FC<MenuProp> = ({active, setActive}) => {
     const location = useLocation();
+    const {t} = useTranslation();
 
     useEffect(() => {
         setActive(false);
@@ -18,13 +20,13 @@ const Menu: FC<MenuProp> = ({active, setActive}) => {
     return (
         <ul className={`menu ${active ? 'active' : ''}`}>
             <li>
-                <Link to="/">Home</Link>
+                <Link to="/">{t('navigation.links.homePage')}</Link>
             </li>
             <li>
-                <Link to="/portfolio">Service</Link>
+                <Link to="/portfolio">{t('navigation.links.contacts')}</Link>
             </li>
             <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact">{t('navigation.links.portfolio')}</Link>
             </li>
         </ul>
     );
