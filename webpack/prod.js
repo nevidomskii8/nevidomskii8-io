@@ -1,4 +1,3 @@
-
 import TerserJSPlugin from 'terser-webpack-plugin';
 
 import * as plugins from './plugins';

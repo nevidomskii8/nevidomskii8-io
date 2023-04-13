@@ -1,4 +1,3 @@
-
 export const arrayFilterEmpty = (array) => array.filter((x) => !!x);
 
 export const pathRewrite = (localUrl, remoteUrl) => (path) =>

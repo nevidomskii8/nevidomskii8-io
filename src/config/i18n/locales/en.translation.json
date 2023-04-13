@@ -1,6 +1,10 @@
 {
   "homePage": {
-    "welcome": "some welcome text"
+    "welcome": "I welcome you to my portfolio!",
+    "subWelcome": "Here you will find a collection of my past projects, experience and skills.",
+    "describeHeader": "A little bit about me:",
+    "describe": "My passion lies in developing interactive and dynamic web applications, I have experience with various front-end technologies such as React, React Native. In addition, I am learning server-side frameworks such as Node.js and Express.js. Throughout my career, I have worked with clients from various industries and sectors, providing solutions for their specific needs. My goal is to continue learning and improving my skills by participating in interesting and innovative"
+
   },
   "portfolio`": {
     "title": "Some very interesting headline"
