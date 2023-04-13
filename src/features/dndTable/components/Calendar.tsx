@@ -18,9 +18,7 @@ const Calendar = () => {
             {days.map((day) => (
                 <CalendarCell
                     day={day}
-                    onMoveCell={(id: number, day: number) =>
-                        console.log('check ON_MOVE', {id, day})
-                    }
+                    onMoveCell={(id: number, day: number) => undefined}
                 />
             ))}
         </div>

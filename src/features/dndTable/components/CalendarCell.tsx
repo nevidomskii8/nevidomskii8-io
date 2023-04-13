@@ -22,17 +22,13 @@ const CalendarCell: FC<PropsCalendarCell> = ({day, onMoveCell}) => {
     const [, drop] = useDrop(
         {
             accept: 'Cell',
-            drop: (item, monitor) => {
-                console.log('check DROP ', {item, monitor});
-            },
+            drop: (item, monitor) => undefined,
             hover(draggedId, rest) {
-                console.log('check HOVER ', {check: draggedId, day});
                 // if (draggedId !== day) {
                 //   onMoveCell(draggedId, day);
                 // }
             },
             collect: (monitor) => {
-                console.log('check MOT');
                 return {
                     canDrop: monitor.canDrop(),
                     isOver: monitor.isOver(),

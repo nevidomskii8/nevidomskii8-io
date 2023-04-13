@@ -20,13 +20,13 @@ const Menu: FC<MenuProp> = ({active, setActive}) => {
     return (
         <ul className={`menu ${active ? 'active' : ''}`}>
             <li>
-                <Link to="/">{t('navigation.links.homePage')}</Link>
+                <Link to='/'>{t('navigation.links.homePage')}</Link>
             </li>
             <li>
-                <Link to="/portfolio">{t('navigation.links.contacts')}</Link>
+                <Link to='/contact'>{t('navigation.links.contacts')}</Link>
             </li>
             <li>
-                <Link to="/contact">{t('navigation.links.portfolio')}</Link>
+                <Link to='/portfolio'>{t('navigation.links.portfolio')}</Link>
             </li>
         </ul>
     );

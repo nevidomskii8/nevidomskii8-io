@@ -13,7 +13,6 @@ const MainLayout = () => {
 
     // TODO: move state to redux
     const onChangeLanguage = async (lang: string) => {
-        console.log('check lang  ', lang);
         await i18n.changeLanguage(lang);
     };
 
@@ -24,10 +23,10 @@ const MainLayout = () => {
                 setActive={setActive}
                 onChangeLanguage={onChangeLanguage}
             />
-            <div className="main-container">
-                <div className="main">
-                    <div className="content">
-                        <div className="overlay">
+            <div className='main-container'>
+                <div className='main'>
+                    <div className='content'>
+                        <div className='overlay'>
                             <Outlet />
                         </div>
                     </div>
