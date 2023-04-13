@@ -1,3 +1,5 @@
+@import '../../styles/_variables';
+
 .header {
     position: fixed;
     top: 0;
@@ -5,14 +7,13 @@
     width: 100%;
     z-index: 11;
     height: 5rem;
-    background-color: #fcf;
+    background-color: #ccffeb;
 
     &__content {
-        max-width: 1120px;
         height: 100%;
         width: 100%;
         margin: 0 auto;
-        padding: 0 2rem;
+        padding: 0 $horizontal-padding;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -25,7 +26,7 @@
 }
 
 .menu-toggle {
-    --size: 80px;
+    --size: 60px;
     width: var(--size);
     height: var(--size);
     display: flex;
