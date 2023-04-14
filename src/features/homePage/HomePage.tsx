@@ -3,6 +3,8 @@ import './index.scss';
 import * as React from 'react';
 import {useTranslation} from 'react-i18next';
 
+import TextAnimation from '@components/anivation/TextAnimation';
+
 const HomePage = () => {
     const {t} = useTranslation();
     return (
@@ -13,7 +15,7 @@ const HomePage = () => {
                     className={'home_page_image'}
                 />
                 <div className={'home_welcome_container'}>
-                    <h1 className={'home_welcome'}>{t('homePage.welcome')}</h1>
+                    <TextAnimation>{t('homePage.welcome')}</TextAnimation>
                     <h2 className={'home_welcome'}>
                         {t('homePage.subWelcome')}
                     </h2>

@@ -22,7 +22,7 @@ $image_height: $image_width * 1.3;
   padding: 0 5%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .home_welcome {
