@@ -1,0 +1,14 @@
+.contact_container {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+.wrapper {
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #00112c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

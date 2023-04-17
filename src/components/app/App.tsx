@@ -1,5 +1,6 @@
 import './App.scss';
 
+import Contacts from '@features/contacts/Contacts';
 import HomePage from '@features/homePage/HomePage';
 import React from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
@@ -10,10 +11,10 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<MainLayout />}>
+                <Route path='/' element={<MainLayout />}>
                     <Route index element={<HomePage />} />
-                    <Route path="portfolio" element={<Portfolio />} />
-                    <Route path="contact" element={<Contact />} />
+                    <Route path='portfolio' element={<Portfolio />} />
+                    <Route path='contact' element={<Contacts />} />
                 </Route>
             </Routes>
         </BrowserRouter>
@@ -27,14 +28,6 @@ function Portfolio(): JSX.Element {
         <div>
             {' '}
             <h1>Portfolio</h1>
-        </div>
-    );
-}
-function Contact(): JSX.Element {
-    return (
-        <div>
-            {' '}
-            <h1>Contact</h1>
         </div>
     );
 }

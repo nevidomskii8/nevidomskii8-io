@@ -8,4 +8,5 @@ export const aliasItems = {
     '@styles': join(rootDir, '/src/styles'),
     '@components': join(rootDir, '/src/components'),
     '@features': join(rootDir, '/src/features'),
+    '@styledComponents': join(rootDir, 'src/styledComponents'),
 };
