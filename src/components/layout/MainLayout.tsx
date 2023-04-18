@@ -33,6 +33,14 @@ const MainLayout = () => {
                 </div>
             </div>
             <Menu active={active} setActive={setActive} />
+            <ul className='box-area'>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
     );
 };
