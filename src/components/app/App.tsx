@@ -2,6 +2,7 @@ import './App.scss';
 
 import Contacts from '@features/contacts/Contacts';
 import HomePage from '@features/homePage/HomePage';
+import Portfolio from '@features/portfolio/Portfolio';
 import React from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
@@ -22,12 +23,3 @@ function App() {
 }
 
 export default App;
-
-function Portfolio(): JSX.Element {
-    return (
-        <div>
-            {' '}
-            <h1>Portfolio</h1>
-        </div>
-    );
-}
