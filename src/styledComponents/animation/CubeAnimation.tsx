@@ -42,12 +42,7 @@ const Wrapper = styled.div<{hover: boolean}>((props) => ({
         'div:nth-child(2)': {
             // side-2
             color: 'white',
-            backgroundColor: 'deepskyblue',
             transform: 'rotateY(90deg) translateZ(50px)',
-            img: {
-                height: '100%',
-                width: '100%',
-            },
         },
     },
 
