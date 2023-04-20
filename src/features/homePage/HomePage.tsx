@@ -3,6 +3,7 @@ import './index.scss';
 import TextAnimation from '@styledComponents/animation/TextAnimation';
 import * as React from 'react';
 import {useTranslation} from 'react-i18next';
+import {Link} from 'react-router-dom';
 
 const HomePage = () => {
     const {t} = useTranslation();
@@ -17,7 +18,7 @@ const HomePage = () => {
                 <div className={'home_welcome_container'}>
                     <TextAnimation>{t('homePage.welcome')}</TextAnimation>
                     <h2 className={'home_welcome'}>
-                        {t('homePage.subWelcome')}
+                        <Link to='/portfolio'>{t('homePage.subWelcome')}</Link>
                     </h2>
                 </div>
             </div>

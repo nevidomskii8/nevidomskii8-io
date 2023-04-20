@@ -7,7 +7,7 @@
     width: 100%;
     z-index: 11;
     height: 3rem;
-    background-color: #ccffeb;
+    background: linear-gradient(to right, #26B8CE, #5985D8, #7C2AE8) ;
 
     &__content {
         height: 100%;
@@ -62,7 +62,7 @@
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: #0e2431;
+    background: #fff;
     transition: transform 0.4s ease-in-out;
 
 }

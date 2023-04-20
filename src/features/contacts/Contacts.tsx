@@ -1,6 +1,5 @@
 import './index.scss';
 
-import {Link} from '@mui/material';
 import CubeAnimation from '@styledComponents/animation/CubeAnimation';
 import {StyledLink} from '@styledComponents/StyledLink';
 import React, {useState} from 'react';
@@ -32,6 +31,7 @@ const Contacts: () => JSX.Element = () => {
                         </div>
                     </CubeAnimation>
                     <StyledLink
+                        target={'_blank'}
                         href={'https://github.com/nevidomskii8'}
                         onMouseOver={handleHover(Links.GITHUB)}
                     >
@@ -58,7 +58,8 @@ const Contacts: () => JSX.Element = () => {
                         </div>
                     </CubeAnimation>
                     <StyledLink
-                        href={'www.linkedin.com/in/nevidomskii'}
+                        target={'_blank'}
+                        href={'https://www.linkedin.com/in/nevidomskii/'}
                         onMouseOver={handleHover(Links.LINKEDIN)}
                     >
                         Linkedin
@@ -84,6 +85,7 @@ const Contacts: () => JSX.Element = () => {
                         </div>
                     </CubeAnimation>
                     <StyledLink
+                        target={'_blank'}
                         href={'https://t.me/Jack_Dom'}
                         onMouseOver={handleHover(Links.TELEGRAM)}
                     >
@@ -110,8 +112,9 @@ const Contacts: () => JSX.Element = () => {
                         </div>
                     </CubeAnimation>
                     <StyledLink
+                        target={'_blank'}
                         onMouseOver={handleHover(Links.MAIL)}
-                        href={'nevidomskiy8@gmail.com'}
+                        href={'https://nevidomskiy8@gmail.com'}
                     >
                         Mail
                     </StyledLink>
