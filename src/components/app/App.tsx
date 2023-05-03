@@ -4,13 +4,13 @@ import Contacts from '@features/contacts/Contacts';
 import HomePage from '@features/homePage/HomePage';
 import Portfolio from '@features/portfolio/Portfolio';
 import React from 'react';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {HashRouter, Route, Routes} from 'react-router-dom';
 
 import MainLayout from '@components/layout/MainLayout';
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path='/' element={<MainLayout />}>
                     <Route index element={<HomePage />} />
@@ -18,7 +18,7 @@ function App() {
                     <Route path='contact' element={<Contacts />} />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
