@@ -34,6 +34,7 @@ const Contacts: () => JSX.Element = () => {
                         target={'_blank'}
                         href={'https://github.com/nevidomskii8'}
                         onMouseOver={handleHover(Links.GITHUB)}
+                        onMouseLeave={handleHover(Links.RESET)}
                     >
                         Github
                     </StyledLink>
@@ -61,6 +62,7 @@ const Contacts: () => JSX.Element = () => {
                         target={'_blank'}
                         href={'https://www.linkedin.com/in/nevidomskii/'}
                         onMouseOver={handleHover(Links.LINKEDIN)}
+                        onMouseLeave={handleHover(Links.RESET)}
                     >
                         Linkedin
                     </StyledLink>
@@ -88,6 +90,7 @@ const Contacts: () => JSX.Element = () => {
                         target={'_blank'}
                         href={'https://t.me/Jack_Dom'}
                         onMouseOver={handleHover(Links.TELEGRAM)}
+                        onMouseLeave={handleHover(Links.RESET)}
                     >
                         Telegram
                     </StyledLink>
@@ -115,6 +118,7 @@ const Contacts: () => JSX.Element = () => {
                         target={'_blank'}
                         onMouseOver={handleHover(Links.MAIL)}
                         href={'https://nevidomskiy8@gmail.com'}
+                        onMouseLeave={handleHover(Links.RESET)}
                     >
                         Mail
                     </StyledLink>
@@ -129,6 +133,7 @@ enum Links {
     TELEGRAM = 'TELEGRAM',
     LINKEDIN = 'LINKEDIN',
     GITHUB = 'GITHUB',
+    RESET = 'RESET',
 }
 
 type HoverLink = keyof typeof Links;
